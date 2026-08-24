@@ -25,15 +25,15 @@
 		var audio = new Audio("im a woman - slipmat version.mp3");
 		audio.volume = 1;
 	    
-		const play = false
+		let play = false
 		
 		function playpause() {
 			if(play) {
-				play = false
+				let play = false
 				audio.pause
 			}
 			else {
-				play = true
+				let play = true
 				audio.play
 			}
 		}
