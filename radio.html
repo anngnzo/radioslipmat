@@ -13,5 +13,26 @@
 		<p>hey dit is de radio </p>
 
 		<audio src="im a woman - slipmat version.mp3" id="stream" autoplay>
+		<button id="playpause" onclick="playpause()">play/pause</button>
+		<script>
+			
+		var audio = new Audio("im a woman - slipmat version.mp3");
+		audio.volume = 1;
+	    
+		const play = false
+		
+		function playpause() {
+			if(play) {
+				play = false
+				audio.pause
+			}
+			else {
+				play = true
+				audio.play
+			}
+		}
+      
+
+		</script>
 	</body>
 </html>
