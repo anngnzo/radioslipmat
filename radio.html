@@ -25,19 +25,19 @@
 		var audio = new Audio("im a woman - slipmat version.mp3");
 		audio.volume = 1;
 	    
-		let play = false
+		var play = 0
 		
 		function playpause() {
-			if(play == true) {
-				let play = false
+			if (play == 1) {
+				let play = 0
 				audio.pause
 				console.log("pause audio")
 			}
-			else {
-				let play = true
+			else if (play == 0){
+				let play = 1
 				audio.play
 				console.log("PLAY AUDIO")
-			}
+			} else {console.log("bruh werkt niet")}
 		}
       
 
